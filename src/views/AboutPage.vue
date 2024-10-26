@@ -3,13 +3,14 @@
     <p>Welcome to the About page!</p>
     <a href="#/">กลับ</a> |
     <a href="#/story">ffffff</a> |
+    <a href="#/about">fffff</a>
+
 
   </div>
 </template>
 
 <script lang="ts" setup>
 import { defineComponent } from 'vue';
-
 
 defineComponent({
   name: 'AboutPage',
@@ -21,6 +22,7 @@ defineComponent({
 h1 {
   color: #333;
 }
+
 
 p {
   font-size: 16px;

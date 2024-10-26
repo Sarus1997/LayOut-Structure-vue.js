@@ -31,5 +31,6 @@ const currentView = computed(() => {
       <li><a href="#/story" class="nav-link">Story</a></li>
     </ul>
   </div>
+
   <component :is="currentView" />
 </template>
