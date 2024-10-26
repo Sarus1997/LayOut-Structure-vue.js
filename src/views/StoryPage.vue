@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>asvfaegreswhdrsghrqehjurqehj</p>
+    <p>แมวขาว</p>
     <a href="#/">กลับ</a> |
 
   </div>
@@ -16,7 +16,6 @@ defineComponent({
 </script>
 
 <style scoped>
-/* ใส่สไตล์ที่คุณต้องการที่นี่ */
 h1 {
   color: #333;
 }

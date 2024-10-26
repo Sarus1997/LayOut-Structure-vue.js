@@ -3,7 +3,7 @@
     <p>Welcome to the About page!</p>
     <a href="#/">กลับ</a> |
     <a href="#/story">ffffff</a> |
-    <a href="#/about">fffff</a>
+    <a href="#/dggd">fffff</a>
 
 
   </div>
