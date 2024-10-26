@@ -1,16 +1,15 @@
 <template>
   <div>
+    <Hero />
     <h1>Home Page</h1>
     <p>Welcome to the Home page!</p>
 
-    <a href="#/about">About</a> |
+    <router-link to="/about">About</router-link> |
   </div>
 </template>
 
-<script>
-export default {
-  name: 'HomePage',
-};
+<script lang="ts" setup>
+import Hero from '@/components/HeroPage.vue'
 </script>
 
 <style scoped>

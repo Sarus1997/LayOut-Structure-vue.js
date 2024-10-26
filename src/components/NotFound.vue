@@ -3,7 +3,9 @@
     <h1 class="neon-text">404</h1>
     <h1>Page Not Found</h1>
     <br>
-    <router-link to="/" class="back-to-home">กลับหน้าแรก</router-link>
+
+    <a href="#/" class="back-to-home">กลับหน้าแรก</a>
+
   </div>
 </template>
 
