@@ -4,7 +4,7 @@
     <h1>Home Page</h1>
     <p>Welcome to the Home page!</p>
 
-    <router-link to="/about">About</router-link> |
+    <a href="#/about">About</a> |
   </div>
 </template>
 
