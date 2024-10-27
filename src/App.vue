@@ -1,25 +1,8 @@
 <script setup>
-import { ref, computed } from 'vue'
-import Home from './views/HomePage.vue'
-import About from './views/AboutPage.vue'
-import Story from './views/StoryPage.vue'
-import NotFound from './components/NotFound.vue'
 
-const routes = {
-  '/': Home,
-  '/about': About,
-  '/story': Story
-}
+// ไม่ต้องใช้งาน routes และ currentView เนื่องจากเราจะให้ Vue Router จัดการ routing
 
-const currentPath = ref(window.location.hash)
 
-window.addEventListener('hashchange', () => {
-  currentPath.value = window.location.hash
-})
-
-const currentView = computed(() => {
-  return routes[currentPath.value.slice(1) || '/'] || NotFound
-})
 </script>
 
 <template>
@@ -32,5 +15,10 @@ const currentView = computed(() => {
     </ul>
   </div>
 
-  <component :is="currentView" />
+  <!-- ใช้ <router-view /> สำหรับแสดง component ตามเส้นทาง -->
+  <router-view />
 </template>
+
+<style>
+/* ใส่สไตล์ได้ตามปกติ */
+</style>

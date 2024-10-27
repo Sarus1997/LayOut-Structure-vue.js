@@ -3,7 +3,7 @@ import { ref, computed } from 'vue';
 import HomePage from '@/views/HomePage.vue';
 import AboutPage from '@/views/AboutPage.vue';
 import StoryPage from '@/views/StoryPage.vue';
-import NotFound from '@/components/NotFound.vue'; // ต้องสร้างไฟล์ NotFound.vue
+import NotFound from '@/components/NotFound.vue';
 
 const routes = [
   {
