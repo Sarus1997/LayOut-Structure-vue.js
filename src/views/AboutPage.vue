@@ -3,6 +3,12 @@
   <router-link to="/">กลับ</router-link> |
   <router-link to="/story">ffffff</router-link> |
   <button class="btn-count" @click="Count">fffff {{ count }}</button>
+
+
+  <div class="container">
+    <h1>Go To Story</h1>
+    <router-link class="btn-count" to="/story">ffffff</router-link>
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -37,5 +43,14 @@ p {
 
 .btn-count:active {
   background-color: rgb(149, 44, 219);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  text-align: center;
 }
 </style>

@@ -47,7 +47,7 @@ ul {
 }
 
 .nav-link:hover {
-  color: #ffcc00;
+  color: #193fb1;
 }
 
 .nav-link::after {
@@ -57,7 +57,7 @@ ul {
   bottom: -5px;
   width: 0;
   height: 2px;
-  background-color: #ffcc00;
+  background-color: #193fb1;
   transition: width 0.3s ease;
 }
 
