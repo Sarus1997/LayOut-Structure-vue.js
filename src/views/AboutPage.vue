@@ -23,7 +23,6 @@ h1 {
   color: #333;
 }
 
-
 p {
   font-size: 16px;
 }

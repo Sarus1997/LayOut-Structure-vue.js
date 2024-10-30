@@ -66,12 +66,10 @@
   font-weight: bold;
   color: #fff;
   background-color: #007bff;
-  /* สีพื้นหลัง */
   border-radius: 25px;
   text-decoration: none;
   transition: background-color 0.3s, transform 0.3s;
   box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
-  /* เงาของปุ่ม */
 }
 
 .back-to-home:hover {
