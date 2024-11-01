@@ -13,7 +13,11 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
+import { defineComponent } from 'vue';
 
+defineComponent({
+  name: 'HeroPage',
+});
 const items = ref([
   {
     src: "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
