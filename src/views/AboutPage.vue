@@ -1,5 +1,5 @@
 <template>
-  <v-container class="fill-height" fluid>
+  <v-container>
     <v-row align="center" justify="center">
       <v-col cols="12" md="8">
         <v-card elevation="12" class="pa-6">
@@ -18,13 +18,19 @@
             <v-btn @click="Count" class="btn-count" color="primary" elevation="2" outlined>
               Click me! {{ count }}
             </v-btn>
-            <v-btn to="/" color="secondary" elevation="2">
-              กลับ
-            </v-btn>
-            <v-btn to="/story" color="success" elevation="2">
-              Go to Story
-            </v-btn>
           </v-card-actions>
+          <v-row>
+            <v-col cols="12" sm="3">
+              <v-btn to="/" color="secondary" elevation="2" block>
+                กลับ
+              </v-btn>
+            </v-col>
+            <v-col cols="12" sm="3">
+              <v-btn to="/story" color="success" elevation="2" block>
+                Go to Story
+              </v-btn>
+            </v-col>
+          </v-row>
         </v-card>
       </v-col>
     </v-row>
