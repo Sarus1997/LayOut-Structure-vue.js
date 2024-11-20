@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <div class="logo">LOGO</div>
-    <button class="menu-btn" @click="toggleSidebar"><i class="fas fa-hamburger"></i></button>
+    <button class="menu-btn" @click="toggleSidebar"><i class="icon-bar"></i></button>
   </div>
   <!-- Sidebar -->
   <div class="sidebar" :class="{ open: isSidebarOpen }">
@@ -26,7 +26,7 @@ const toggleSidebar = () => {
 };
 </script>
 
-<style>
+<style scoped>
 .navbar {
   display: flex;
   align-items: center;
@@ -37,14 +37,53 @@ const toggleSidebar = () => {
   color: #fff;
   z-index: 10;
   position: sticky;
-  /* เปลี่ยนจาก relative เป็น sticky */
   top: 0;
-  /* เพิ่ม top: 0 เพื่อให้ sticky */
+}
+
+.icon-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.icon-bar:before,
+.icon-bar:after,
+.icon-bar:nth-child(2) {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.icon-bar:hover {
+  transform: scale(1.1);
+  background-color: #ddd;
 }
 
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
+  background: linear-gradient(to right, #ff0066, #ff6600, #ffff00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 0% 100%;
+  transition: background-position 0.5s ease-out;
+}
+
+.logo:hover {
+  background-position: 100% 100%;
 }
 
 .menu-btn {

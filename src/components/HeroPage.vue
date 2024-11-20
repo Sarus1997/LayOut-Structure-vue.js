@@ -1,6 +1,6 @@
 <template>
   <div class="hero-page">
-    <v-carousel :show-arrows="true" :cycle="true" :height="'50vh'">
+    <v-carousel :show-arrows="false" :cycle="true" :height="'50vh'">
       <v-carousel-item v-for="(item, index) in items" :key="index" :src="item.src" cover>
         <div class="hero">
           <h1>{{ item.title }}</h1>
@@ -47,6 +47,16 @@ const items = ref([
   text-align: center;
   color: white;
   background-color: rgba(10, 10, 10, 0.7);
+}
+
+.hero h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.hero p {
+  font-size: 1.0rem;
+  margin-bottom: 0.5rem;
 }
 
 .v-carousel-item {
