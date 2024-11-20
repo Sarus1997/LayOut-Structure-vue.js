@@ -38,6 +38,7 @@ const toggleSidebar = () => {
   z-index: 10;
   position: sticky;
   top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .icon-bar {
@@ -148,6 +149,7 @@ const toggleSidebar = () => {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .content {
