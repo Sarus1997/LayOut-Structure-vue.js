@@ -20,7 +20,7 @@
 
 <script setup>
 import { ref } from "vue";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const isSidebarOpen = ref(false);
 
