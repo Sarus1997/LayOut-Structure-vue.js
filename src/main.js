@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// main.js
+>>>>>>> ae8300257790a15fc0d6dc12c58b8f29857380d3
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './routes/router';
