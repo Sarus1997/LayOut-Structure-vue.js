@@ -1,26 +1,23 @@
 <template>
-  <div>
-    <div class="navbar">
-      <div class="logo">LOGO</div>
-      <button class="menu-btn" @click="toggleSidebar"><i class="fas fa-hamburger"></i></button>
-    </div>
-    <!-- Sidebar -->
-    <div class="sidebar" :class="{ open: isSidebarOpen }">
-      <button class="close-btn" @click="toggleSidebar">✖</button>
-      <ul>
-        <li><a href="#/" class="nav-link">Home</a></li>
-        <li><a href="#/about" class="nav-link">About</a></li>
-        <li><a href="#/story" class="nav-link">Story</a></li>
-      </ul>
-    </div>
-    <!-- Overlay -->
-    <div class="overlay" v-if="isSidebarOpen" @click="toggleSidebar"></div>
+  <div class="navbar">
+    <div class="logo">LOGO</div>
+    <button class="menu-btn" @click="toggleSidebar"><i class="fas fa-hamburger"></i></button>
   </div>
+  <!-- Sidebar -->
+  <div class="sidebar" :class="{ open: isSidebarOpen }">
+    <button class="close-btn" @click="toggleSidebar">✖</button>
+    <ul>
+      <li><a href="#/" class="nav-link">Home</a></li>
+      <li><a href="#/about" class="nav-link">About</a></li>
+      <li><a href="#/story" class="nav-link">Story</a></li>
+    </ul>
+  </div>
+  <!-- Overlay -->
+  <div class="overlay" v-if="isSidebarOpen" @click="toggleSidebar"></div>
 </template>
 
 <script setup>
 import { ref } from "vue";
-
 
 const isSidebarOpen = ref(false);
 
@@ -30,7 +27,6 @@ const toggleSidebar = () => {
 </script>
 
 <style>
-/* Navbar styles */
 .navbar {
   display: flex;
   align-items: center;
@@ -40,7 +36,10 @@ const toggleSidebar = () => {
   background-color: #333;
   color: #fff;
   z-index: 10;
-  position: relative;
+  position: sticky;
+  /* เปลี่ยนจาก relative เป็น sticky */
+  top: 0;
+  /* เพิ่ม top: 0 เพื่อให้ sticky */
 }
 
 .logo {
@@ -56,7 +55,6 @@ const toggleSidebar = () => {
   cursor: pointer;
 }
 
-/* Sidebar styles */
 .sidebar {
   position: fixed;
   top: 0;
@@ -103,7 +101,6 @@ const toggleSidebar = () => {
   color: #193fb1;
 }
 
-/* Overlay styles */
 .overlay {
   position: fixed;
   top: 0;
@@ -112,10 +109,8 @@ const toggleSidebar = () => {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
-  /* Place Overlay below Sidebar but above the rest */
 }
 
-/* Example content */
 .content {
   padding: 20px;
   margin-top: 20px;

@@ -1,5 +1,4 @@
 <template>
-  <Hero />
   <v-container class="fill-height" fluid>
     <v-row align="center" justify="center">
       <v-col cols="12" md="8" class="text-center">
@@ -49,7 +48,7 @@
 </template>
 
 <script setup>
-import Hero from "@/components/HeroPage.vue";
+
 import { ref } from "vue";
 
 const model = ref('tab-1');
